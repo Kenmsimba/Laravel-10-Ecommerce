@@ -3,8 +3,8 @@
  Template Name:Surfside Media
  Template URI: surfsidemedia.in
  Description: Ecommerce Website Project
- Author: Surfside Media
- Author URI: https://www.surfsidemedia.in/
+
+ 
 
  ----------------------------------------------------------------------------------- */
 // 01.Tap to top js
