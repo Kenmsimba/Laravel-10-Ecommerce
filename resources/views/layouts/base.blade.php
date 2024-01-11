@@ -192,7 +192,7 @@
                                                             </li>
                                                         @endif
                                                         <li>
-                                                            <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('frmlogout').submit();" class="d-block">Logout</a>
+                                                            <a href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('frmlogout').submit();" class="d-block">Logout</a>
                                                             <form  id="frmlogout" action="{{route('logout')}}" method="POST">
                                                                 @csrf
                                                             </form>
