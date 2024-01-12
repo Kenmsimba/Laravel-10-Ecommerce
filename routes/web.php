@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/',[AppController::class,'index'])->name('app.index');
-Route::get('/shop',[ShopController::class,'index'])->name('shop.index');
+Route::get('/shop',[ShopController::class,'index'])->name('shop.index'); //index is the function's name inside the named controller
+Route::get('/product/{slug}',[ShopController::class,'productDetails'])->name('shop.product.details'); //productDetails is the function name inside the named controller
 
 
 Auth::routes();

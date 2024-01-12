@@ -5,6 +5,9 @@
         nav svg{
             height: 20px;
         }
+        .product-box .product-details h5 {
+            width: 100%;
+        }
     </style>
 @endpush
 
@@ -451,18 +454,17 @@
                     <div
                         class="row g-sm-4 g-3 row-cols-lg-4 row-cols-md-3 row-cols-2 mt-1 custom-gy-5 product-style-2 ratio_asos product-list-section">
                         @foreach($products as $product )
-
                         <div>
                             <div class="product-box">
                                 <div class="img-wrapper">
                                     <div class="front">
-                                        <a href="product/nihil-beatae-sit-sed.html">
+                                        <a href="{{route('shop.product.details',['slug'=>$product->slug])}}">
                                             <img src="assets/images/fashion/product/front/{{$product->image}}"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="back">
-                                        <a href="product/nihil-beatae-sit-sed.html">
+                                        <a href="{{route('shop.product.details',['slug'=>$product->slug])}}">
                                             <img src="assets/images/fashion/product/back/{{$product->image}}"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
@@ -509,7 +511,7 @@
                                         </ul>
                                     </div>
                                     <div class="main-price">
-                                        <a href="product/nihil-beatae-sit-sed.html" class="font-default">
+                                        <a href="{{route('shop.product.details',['slug'=>$product->slug])}}" class="font-default">
                                             <h5 class="ms-0">{{$product->name}}</h5>
                                         </a>
                                         <div class="listing-content">
